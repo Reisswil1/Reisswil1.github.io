@@ -3,21 +3,22 @@
 <html Lang="en">
 <head>
 <Title> Kirstie + Reiss </Title>
-<link rel="stylesheet"type="text/css" href="stylesheet2 - Copy.css">
+<link rel="stylesheet"type="text/css" href="stylesheet2 - test.css">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <ul>
- <li><a href="index.html">Home</a></li>
+ <li><a href="index">Home</a></li>
+  <li><a href="RSVP-test.html">RSVP</a></li> <!-- this is how to link homepage with other page -->
+ 
  <li class="dropdown">
     <a href="javascript:void(0)"
-	class="dropbtn">Introductions</a>
-    <div class="dropdown-content">
-      <a href="About us.html">About us</a>
-       <a href="#">More Info</a></li>
-  <li><a href="RSVP.html">RSVP</a></li> <!-- this is how to link homepage with other page -->
-   <li><a href="#">Gubbins</a></li>
-   <li><a href="Contact.html">Contact us</a></li>
+	class="dropbtn">Information</a>
+	 <div class="dropdown-content">
+	  <a href="Venue - test.html">Venue & getting there</a>
+	  <a href="Accomadation - test.html">Accommodation</a></li>
+   <li><a href="Contact test.html">Contact us</a></li>
 </ul><br>
 
 <body>
@@ -27,14 +28,49 @@
 
 <div class="container">
   <img src="KR.jpg" alt="kirstie and reiss" style="width:100%;">
-  <div class="centered">Kirstie <br>& </br> Reiss</div>
 </div>
 
 
-<h2>Welcome</h2></br>
-<p>Hi Everyone welcome to our wedding website. On this website you will find all the infomation for our special day.
-<br> We ask you first to select the RSVP tab at the Top of the page to fill our the form. If you have any issues or want to know more about our date follow the tabs at the top.</br> 
+<h3 align="center">Welcome</h3></br>
+<p align="center">Hi everyone welcome to our wedding website. On this website you will find all the infomation for our special day.
+<br> We ask you first to select the RSVP tab at the top of the page to fill our the form. If you have any issues or want to know more about our date follow the tabs at the top.</br> 
 </p>
+
+<h3 align="center"> Wedding countdown clock!</h3>
+
+<!-- Display the countdown timer in an element -->
+<h4  id="demo"></h4>
+
+<script >
+// Set the date we're counting down to
+var countDownDate = new Date("Sept 22, 2022 13:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "We're Married!";
+  }
+}, 1000);
+</script>
 
  <div class="footer">
   <p> Kirstie & Reiss </p>

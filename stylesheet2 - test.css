@@ -1,48 +1,60 @@
-/* responsive web design for mobiel deveices */
-@viewport {
- zoom: 1.0;
- width: extend-to-zoom;
- }
- @ms-viewport {
-	 zoom: 1.0;
-	 width:extend-to-zoom;
- }
 
 .header {
-  background-color: 217, 242, 253;
+ /* background-color: #d9f2fd; /* was white before */
   text-align: left;
   padding: 20px;
   font-size:50px;
 }
 
 body {
-  background-color: 217, 242, 253;
-  color: black;
+   background-color: black; /* was white before */
+  color: #BFC8BB;
   margin:20px 20px;
-  font-size: 20px 20px;
+  font-size: 50px 50px; /* was 20px 20px */
+  font-style: bold;
+ 
 }
 p { 
    font-size:20px;
    margin:20px 20px;
-}
 
+}
+p2 {
+	 font-size:100px;
+   margin:20px 20px;
+    text-align: center;
+}
 h1 {
-  color: black;
+  color: #BFC8BB;
   margin-left: 20px;
   text-align: center;
 }
 h2 {
-  color: black;
+  color: #BFC8BB;
   margin-left: 20px;
   margin:4px 4px;
 }
+h3 {
+  color: #BFC8BB;
+  margin-left: 20px;
+  margin:4px 4px;
+  font-size:80px;
+}
+h4 {
+  color: #BFC8BB;
+  margin-left: 20px;
+  margin:4px 4px;
+  font-size:80px;
+  text-align: center;
+}
+
 /* navigation buttons for top of page */
 ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: white;
+  background-color: black;
   font-size:35px;
 }
 
@@ -52,7 +64,7 @@ li{
 
 li a, .dropbtn {
   display: block;
-  color: black;
+  color: #BFC8BB;
   text-align: center;
   padding: 16px;
   text-decoration: none;
@@ -167,7 +179,7 @@ div {
 */
 /*footer for bottom of website */
 .footer {
-  background-color: white;
+  background-color: black;
   text-align: center;
   padding: 10px;
 }
